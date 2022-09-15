@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./assets/first.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/forth.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/second.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/third.jpeg" alt="" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="header-content">
+        <h1 class="big-heading">
+          <span
+            >Creative Health <br />
+            Care Services</span
+          >
+        </h1>
+        <h5>
+          Creative Health Care Services is the Best Professional Platform
+          Providing Multidimensional Health Care Services at National and
+          International Level, Gradually Heading Towards a Vibrant Chain System
+          all over Pakistan and Abroad.
+        </h5>
+        <a class="pri-btn">Contact Us</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
